@@ -26,6 +26,16 @@ soprano = \new Voice = "1" {
 		a4. r4. |
 		r2 f16 g16 a16 c16 |
 		a4. r4. |
+		r2. |
+		r4. r16 d,16 e16 fis16 g16 a16 |
+		b8 r8 r2 |
+		r4. r16 b16 cis16 dis16 e16 fis16 |
+		g8 r8 r2 |
+		c,4 b8 c4. |
+		r8 b8 g8 e8 fis8 g8 |
+		c4 b8 ees,4 a8 |
+		a4 fis8 gis4 e'8 |
+		e2. 
 	}
 }
 
@@ -36,7 +46,7 @@ alto = \new Voice = "2" {
 		\set Staff.instrumentName = #"Alto"
 		\clef "treble" 
 		\time 4/4
-		r1 | r4 bes2 a4~ | a2 g2 | e2 r4 cis4 | d2. r4 |
+		r1 | r4 bes2 a4~ | a2 g2 | e2 r4 e4 | d2. r4 |
 		\break
 		\time 6/8
 		r2. |
@@ -48,8 +58,12 @@ alto = \new Voice = "2" {
 		f4. r4. |
 		r2. |
 		r2 fis16 g16 a16 b16 |
-		c4. r4. |
-
+		c4 b8 c4. |
+		r8 b8 g8 e8 fis8 g8 |
+		a4 g8 a4. |
+		r8 e8 fis8 g8 a8 b8 |
+		a8 r4 r16 d,16 e16 fis16 g16 a16 |
+		b8
 	}
 }
 
@@ -71,7 +85,13 @@ tenor = \new Voice = "3" {
 		r2 c16 bes16 a16 g16 |
 		a4. r4. |
 		r2 gis16 fis16 eis16 gis16 |
-		fis4. 
+		fis4. r4. |
+		a4 g8 a4. |
+		r8 g8 d'8 c8 d8 e8 |
+		fis4 e8 fis4. |
+		r8 g,8 fis8 e8 fis8 g8 |
+		r16 a16 b16 c16 d16 e16 fis4 d8 |
+		g,8
 	}
 }
 
@@ -82,7 +102,7 @@ bass = \new Voice = "4" {
 		\set Staff.instrumentName = #"Bass"
 		\clef "bass" 
 		\time 4/4
-		f2. ees4 | des2 c2 | b1 | d2 r4 e4 | d2. r4 |
+		f2. ees4 | des2 c2 | b1 | d2 r4 cis4 | d2. r4 |
 		\break
 		\time 6/8
 		r2. |
@@ -94,6 +114,12 @@ bass = \new Voice = "4" {
 		r8 f,16 g16 a16 bes16 c8 r4 |
 		r8 fis,16 gis16 a16 b16 cis8 r4 |
 		r8 fis,16 gis16 a16 b16 cis8 r4 |
+		r16 a,16 b16 c16 d16 e16 fis4 d8 |
+		g8 r8 r2 |
+		r16 fis,16 g16 a16 b16 cis16 dis4 b8 |
+		e8 r8 r2 |
+		a4 g8 a4. |
+		r8 g8 d8 c8 d8 e8 
 	}
 }
 
@@ -116,11 +142,11 @@ right = \new Staff {
 		fis4. r8 fis16 g16 a16 b16 |
 
 		c4 b8 c4. |
-		r8 fis8 d8 e8 d8 e8 |
-		a,4 g8 a4. |
+		r8 b8 g8 e8 fis8 g8 |
+		a4 g8 a4. |
 		r8 e8 fis8 g8 a8 b8 |
 		c4 b8 c4. |
-		r8 fis8 d8 e8 d8 e8 |
+		r8 b8 g8 e8 fis8 g8 |
 		c4 b8 ees,4 a8 |
 		a4 fis8 gis4 e'8 |
 
@@ -189,7 +215,6 @@ left = \new Staff {
 		f8 c'8 a8 b,8 d8 g8 |
 		e8 b'8 g8 a,8 c8 g'8 |
 		d8 a'8 f8 g,8 b8 f'8 |
-
 		
 	}
 }
@@ -213,11 +238,13 @@ left = \new Staff {
 			\tenor
 			\bass
 		>>
+		%%{
 		\new PianoStaff <<
 			\set PianoStaff.instrumentName = #"Piano"
 			\right
 			\left
 		>>
+		%%}
 	>>
 }
 
