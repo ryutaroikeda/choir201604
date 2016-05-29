@@ -27,15 +27,26 @@ soprano = \new Voice = "1" {
 		r2 f16 g16 a16 c16 |
 		a4. r4. |
 		r2. |
+
 		r4. r16 d,16 e16 fis16 g16 a16 |
 		b8 r8 r2 |
 		r4. r16 b16 cis16 dis16 e16 fis16 |
 		g8 r8 r2 |
 		c,4 b8 c4. |
 		r8 b8 g8 e8 fis8 g8 |
-		c4 b8 ees,4 a8 |
+		c4 b8 fis4 a8 |
 		a4 fis8 gis4 e'8 |
-		e2. 
+
+		e2. |
+		r2 e16 fis16 e16 cis16 |
+		e4. r4. |
+		r2. |
+		r2 cis16 d16 e16 g16 |
+		f4. r4. |
+		r2 c16 bes16 a16 c16 |
+		bes4 g'8 e4 bes8 |
+		a8 d8 b8 c4 d16 ees16 |
+
 	}
 }
 
@@ -58,12 +69,25 @@ alto = \new Voice = "2" {
 		f4. r4. |
 		r2. |
 		r2 fis16 g16 a16 b16 |
+
 		c4 b8 c4. |
 		r8 b8 g8 e8 fis8 g8 |
 		a4 g8 a4. |
 		r8 e8 fis8 g8 a8 b8 |
 		a8 r4 r16 d,16 e16 fis16 g16 a16 |
-		b8
+		b8 r8 r2 |
+		r4. r16 b,16 cis16 dis16 e16 fis16 |
+		e8 r4 r16 cis16 d16 e16 fis16 gis16 |
+
+		a8 r8 r2 |
+		r2. |
+		r2. |
+		r2 a,16 b16 cis16 e16 |
+		cis4. r4. |
+		r2 cis'16 b16 a16 g16 |
+		f4. r8 a16 g16 fis16 a16 |
+		g4 e8 c4 g'8 |
+		f8 d8 g8 
 	}
 }
 
@@ -86,12 +110,25 @@ tenor = \new Voice = "3" {
 		a4. r4. |
 		r2 gis16 fis16 eis16 gis16 |
 		fis4. r4. |
+
 		a4 g8 a4. |
 		r8 g8 d'8 c8 d8 e8 |
 		fis4 e8 fis4. |
 		r8 g,8 fis8 e8 fis8 g8 |
 		r16 a16 b16 c16 d16 e16 fis4 d8 |
-		g,8
+		g,8 r8 r2 |
+		r16 dis16 e16 fis16 g16 a16 b4 dis,8 |
+		r16 e16 fis16 gis16 a16 b16 e,4. |
+
+		r2. |
+		r2. |
+		r2 cis'16 d16 cis16 b16 |
+		cis4. r4. |
+		r2 a16 b16 cis16 a16 |
+		d4. r8 e16 d16 cis16 e16 |
+		d4. r4. |
+		r2. |
+
 	}
 }
 
@@ -114,17 +151,30 @@ bass = \new Voice = "4" {
 		r8 f,16 g16 a16 bes16 c8 r4 |
 		r8 fis,16 gis16 a16 b16 cis8 r4 |
 		r8 fis,16 gis16 a16 b16 cis8 r4 |
+
 		r16 a,16 b16 c16 d16 e16 fis4 d8 |
 		g8 r8 r2 |
 		r16 fis,16 g16 a16 b16 cis16 dis4 b8 |
 		e8 r8 r2 |
 		a4 g8 a4. |
-		r8 g8 d8 c8 d8 e8 
+		r8 g8 d8 c8 d8 e8 |
+		a4 fis8 dis4 b8 |
+		e4 b8 e,4. |
+
+		r2. |
+		r8 a16 b16 cis16 d16 e8 r4 |
+		r8 a,16 b16 cis16 d16 e8 r4 |
+		r8 a,16 b16 cis16 d16 e8 r4 |
+		r8 a,16 b16 cis16 d16 e8 r4 |
+		r8 d16 e16 f16 g16 a8 r4 |
+		r8 bes,16 c16 d16 e16 f8 r4 |
+		r8 c16 d16 e16 f16 g8 r4 |
+		%r16 d16 e16 f16 g16 f16 e8
 	}
 }
 
 right = \new Staff {
-	\set midiInstrument = #"harpsichord"
+	\set midiInstrument = #"acoustic grand"
 	\relative c''' {
 		\clef "treble"
 		\time 4/4
@@ -147,7 +197,7 @@ right = \new Staff {
 		r8 e8 fis8 g8 a8 b8 |
 		c4 b8 c4. |
 		r8 b8 g8 e8 fis8 g8 |
-		c4 b8 ees,4 a8 |
+		c4 b8 fis4 a8 |
 		a4 fis8 gis4 e'8 |
 
 		e2. |
@@ -172,7 +222,7 @@ right = \new Staff {
 }
 
 left = \new Staff {
-	\set midiInstrument = #"harpsichord"
+	\set midiInstrument = #"acoustic grand"
 	\relative c {
 		\clef "bass"
 		\time 4/4
@@ -196,7 +246,7 @@ left = \new Staff {
 		a8 e'8 c8 d,8 a'8 d8 |
 		g,8 d'8 b8 c,8 g'8 c8 |
 		fis,8 a8 ees8 b8 a'8 ees8 |
-		e8 e'8 dis8 d8 b8 gis8 |
+		e8 fis8 dis8 e8 d8 e8 |
 
 		a8 e'8 e8 e,8 d'8 r8 |
 		a8 e'8 e8 e,8 d'8 r8 |
