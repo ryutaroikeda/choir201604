@@ -14,8 +14,10 @@ soprano = \new Voice = "1" {
 		\clef "treble"
 		\time 4/4
 		\tempo 4 = 56
-		r1 | r1 | r4 ees2 e4 | bes2 r4 g4 | fis2. r4 |
+		%r1 | r1 | r4 ees2 e4 | bes2 r4 g4 | fis2. r4 |
+		r1 | r1 | r4 des2 d4 | aes2 r4 f4 | e2. r4 |
 		\break
+
 		\time 6/8
 		\tempo 4=80
 		r2 g16 a16 g16 e16 |
@@ -45,8 +47,18 @@ soprano = \new Voice = "1" {
 		f4. r4. |
 		r2 c16 bes16 a16 c16 |
 		bes4 g'8 e4 bes8 |
-		a8 d8 b8 c4 d16 ees16 |
+		a8 d8 b8 c4 r8 |
 
+		r4. r16 g16 a16 b16 c16 d16 |
+		ees8 r8 r2 |
+		r4. r16 g,16 a16 b16 c16 d16 |
+		e8 r8 r2 |
+		a,4 g8 a4. |
+		r8 e'8 f8 g8 f8 e8 |
+		f4 e8 f4 g8 |
+		e4. r4. |
+		r2. |
+		r2.
 	}
 }
 
@@ -57,7 +69,8 @@ alto = \new Voice = "2" {
 		\set Staff.instrumentName = #"Alto"
 		\clef "treble" 
 		\time 4/4
-		r1 | r4 bes2 a4~ | a2 g2 | e2 r4 e4 | d2. r4 |
+		%r1 | r4 bes2 a4~ | a2 g2 | e2 r4 e4 | d2. r4 |
+		r1 | r4 aes2 g4~ | g2 f2 | d2 r4 d4 | c2. r4 |
 		\break
 		\time 6/8
 		r2. |
@@ -87,7 +100,18 @@ alto = \new Voice = "2" {
 		r2 cis'16 b16 a16 g16 |
 		f4. r8 a16 g16 fis16 a16 |
 		g4 e8 c4 g'8 |
-		f8 d8 g8 
+		f8 r8 r2 |
+
+		r16 d16 ees16 f16 g16 a16 b4 g8 |
+		c8 r8 r2 |
+		b4 a8 b4. |
+		r4 b,8 c8 d8 e8 |
+		f8 r4 r16 d16 e16 f16 g16 f16 |
+		e8 r8 r2 |
+		r8 a8 f8 d4. |
+		c4. r4. |
+		r2. |
+		r2.
 	}
 }
 
@@ -98,7 +122,8 @@ tenor = \new Voice = "3" {
 		\set Staff.instrumentName = #"Tenor"
 		\clef "treble_8"
 		\time 4/4
-		r4 aes4 g2~ | g2. fis4~ | fis1 | g2 r4 bes4 | a2. r4 |
+		%r4 aes4 g2~ | g2. fis4~ | fis1 | g2 r4 bes4 | a2. r4 |
+		r4 ges4 f2~ | f2. e4~ | e1 | f2 r4 aes4 | g2. r4 |
 		\break
 		\time 6/8
 		r2. |
@@ -127,8 +152,19 @@ tenor = \new Voice = "3" {
 		r2 a16 b16 cis16 a16 |
 		d4. r8 e16 d16 cis16 e16 |
 		d4. r4. |
-		r2. |
+		r4. r16 e,16 f16 g16 a16 bes16 |
+		a8 r2 d16 ees16 |
 
+		f4 ees8 f4. |
+		r8 c8 d8 ees8 d8 c8 |
+		d16 d,16 e16 f16 g16 a16 b4 g8 |
+		c8 r8 r2 |
+		f4 e8 f4. |
+		r8 c8 d8 e8 d8 c8 |
+		d4 c8 b4. |
+		c4. r4. |
+		r2. |
+		r2. 
 	}
 }
 
@@ -139,7 +175,9 @@ bass = \new Voice = "4" {
 		\set Staff.instrumentName = #"Bass"
 		\clef "bass" 
 		\time 4/4
-		f2. ees4 | des2 c2 | b1 | d2 r4 cis4 | d2. r4 |
+		%f2. ees4 | des2 c2 | b1 | d2 r4 cis4 | d2. r4 |
+		ees2. des4 | ces2 bes2 | a1 | c2 r4 b4 | c2. r4 |
+		
 		\break
 		\time 6/8
 		r2. |
@@ -168,8 +206,19 @@ bass = \new Voice = "4" {
 		r8 a,16 b16 cis16 d16 e8 r4 |
 		r8 d16 e16 f16 g16 a8 r4 |
 		r8 bes,16 c16 d16 e16 f8 r4 |
-		r8 c16 d16 e16 f16 g8 r4 |
-		%r16 d16 e16 f16 g16 f16 e8
+		r16 bes,16 c16 d16 e16 f16 g4 c,8 |
+		f8 r2 b,16 c16 |
+
+		d4 c8 d4. |
+		r8 ees8 d8 c8 d8 ees8 |
+		d4 c8 d4. |
+		r8 c8 d8 e8 f8 g8 |
+		a16 a,16 b16 c16 d16 e16 f4 b,8 |
+		c8 r8 r2 |
+		f4 a8 g4 g,8 |
+		c4. r4. |
+		r2. |
+		r2.
 	}
 }
 
@@ -218,6 +267,9 @@ right = \new Staff {
 		r8 e8 f8 g8 f8 e8 |
 		f4 e8 b4 d8 |
 
+		c8 <e, g c>8 <e g c>4 <f aes c>8 <d aes' c>8~ |
+		<d aes' c>8 <e g c>8 <e g c>4 <f aes c>8 <f aes d>8 
+		<e g c>2. \arpeggio \fermata \bar "||"
 	}
 }
 
@@ -265,7 +317,10 @@ left = \new Staff {
 		f8 c'8 a8 b,8 d8 g8 |
 		e8 b'8 g8 a,8 c8 g'8 |
 		d8 a'8 f8 g,8 b8 f'8 |
-		
+
+		c4. f4. |
+		c4. f,4. |
+		c2. \fermata
 	}
 }
 
@@ -288,13 +343,11 @@ left = \new Staff {
 			\tenor
 			\bass
 		>>
-		%%{
 		\new PianoStaff <<
 			\set PianoStaff.instrumentName = #"Piano"
 			\right
 			\left
 		>>
-		%%}
 	>>
 }
 
