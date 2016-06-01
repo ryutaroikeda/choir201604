@@ -54,7 +54,7 @@ soprano = \new Voice = "1" {
 		r4. r16 g,16 a16 b16 c16 d16 |
 		e8 r8 r2 |
 		a,4 g8 a4. |
-		r8 e'8 f8 g8 f8 e8 |
+		r8 e8 f8 g8 f8 e8 |
 		f4 e8 f4 g8 |
 		e4. r4. |
 		r2. |
@@ -100,12 +100,12 @@ alto = \new Voice = "2" {
 		r2 cis'16 b16 a16 g16 |
 		f4. r8 a16 g16 fis16 a16 |
 		g4 e8 c4 g'8 |
-		f8 r8 r2 |
+		f4 d8 c4 r8 |
 
 		r16 d16 ees16 f16 g16 a16 b4 g8 |
 		c8 r8 r2 |
 		b4 a8 b4. |
-		r4 b,8 c8 d8 e8 |
+		r8 a,8 b8 c8 d8 e8 |
 		f8 r4 r16 d16 e16 f16 g16 f16 |
 		e8 r8 r2 |
 		r8 a8 f8 d4. |
@@ -265,9 +265,9 @@ right = \new Staff {
 		r8 c8 d8 e8 f8 g8 |
 		a4 g8 a4. |
 		r8 e8 f8 g8 f8 e8 |
-		f4 e8 b4 d8 |
+		f4 e8 f4 g8 |
 
-		c8 <e, g c>8 <e g c>4 <f aes c>8 <d aes' c>8~ |
+		c,8 <e, g c>8 <e g c>4 <f aes c>8 <d aes' c>8~ |
 		<d aes' c>8 <e g c>8 <e g c>4 <f aes c>8 <f aes d>8 
 		<e g c>2. \arpeggio \fermata \bar "||"
 	}
